@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .prose pre {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+  
+  .prose code {
+    @apply text-indigo-600 dark:text-indigo-400;
+  }
+  
+  .prose img {
+    @apply rounded-lg shadow-md;
+  }
+  
+  .prose table {
+    @apply border-collapse border border-gray-200 dark:border-gray-700;
+  }
+  
+  .prose th,
+  .prose td {
+    @apply border border-gray-200 dark:border-gray-700 px-4 py-2;
+  }
+  
+  .prose th {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+}
+
+.markdown-body {
+  @apply break-words;
+}
